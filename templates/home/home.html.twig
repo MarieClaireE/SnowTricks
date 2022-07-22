@@ -1,5 +1,22 @@
 {% extends "base.html.twig" %}
 
+{% block header %}
+    <header class="masthead bg-primary text-center text-white" style="background-image: url('https://static.posters.cz/image/1300/affiches-et-posters/snowboard-flip-i96988.jpg');background-position:center;height:650px;padding-top:20rem;"  id="tricks">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0 mt-5">
+                La vie est comme le snowboard, il faut se relever à chaque fois que l'on tombe. Une fois que l'on cesse de tomber, on commence enfin à profiter et à aimer ça. Si vous rester au sol, vous ne verrez jamais pourquoi les gens l'aiment tant.
+            </p>
+        </div>
+            <a class="float-end me-5" href="#home">
+                <i class="fa-solid fa-arrow-down fa-2x text-white"></i>
+            </a>
+    </header>
+{% endblock %}
 {% block body %}
-    
+    <body>
+        <div id="home">
+            {% include "home/list_tricks.html.twig" %}
+        </div>
+    </body>
 {% endblock %}
